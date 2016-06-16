@@ -3,12 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Box Starter</title>
+	<title>Leap Loader</title>
 	<link rel="icon" href="./favicon.png">
 	<link rel="stylesheet" href="style/box.css">
 	<link rel="stylesheet" href="style/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Cinzel:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	<header>		
+		<h1>Leap Loader</h1>
+		<p>Spectacular page loader based on CSS keyframes</p>
+		<nav>			
+			<label for="wLogo">With Logo</label>
+			<label for="woLogo">Without Logo</label>
+		</nav>
+	</header>
 	<nav class="boxActions">
 		<a href="#" id="previous_box" title="Previous box">
 			<img src="img/back-icon.svg" alt="back" />
@@ -20,8 +29,43 @@
 			<img src="img/github.svg" alt="Github" />
 		</a>
 	</nav>
-	<h1>Box Starter</h1>
-	<p>An optional &amp; minimal starter kit for krdsbox components</p>
-	<script src="js/main.js"></script>
+	<input type="radio" id="wLogo" name='disp' checked>
+	<section class="wLogo">		
+		<div class="loadWrap">
+			<ul class="bgColor">
+				<li class="secondary"></li>
+				<li class="primary"></li>
+			</ul>
+			<ul class="Jumpers">
+				<li class="dots">				
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  width="300px" height="300px" viewBox="0 0 300 300">
+						<circle fill="none" stroke-miterlimit="10" cx="150" cy="150" r="145"></circle>
+					</svg>
+				</li>
+				<li class="swirl"></li>
+				<li class="bgBall"></li>
+				<li class="pColor"><i></i></li>
+			</ul>
+		</div>
+	</section>
+	<input type="radio" id="woLogo" name='disp'>
+	<section class="woLogo">
+		<div class="loadWrap">
+			<ul class="bgColor">
+				<li class="secondary"></li>
+				<li class="primary"></li>
+			</ul>
+			<ul class="Jumpers">
+				<li class="dots">				
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  width="300px" height="300px" viewBox="0 0 300 300">
+						<circle fill="none" stroke-miterlimit="10" cx="150" cy="150" r="145"></circle>
+					</svg>
+				</li>
+				<li class="swirl"></li>
+				<li class="bgBall"></li>
+				<li class="pColor"><i></i></li>
+			</ul>
+		</div>
+	</section>
 </body>
 </html>
